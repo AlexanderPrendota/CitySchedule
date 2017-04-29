@@ -1,15 +1,20 @@
-var app = angular.module ('MySchedule', []);
+var app = angular.module ('MySchedule', ['ngDialog']);
 
-app.controller("ScheduleController", ['$http', function ($http) {
+app.controller("ScheduleController", ['$http', 'ngDialog', '$scope',function ($http, ngDialog,$scope) {
     var schedule = this;
     schedule.data = [];
 
-    $http.get("http://localhost:8080/schedule/todays").success(function (response) {
-        schedule.data =  response;
-    });
+    schedule.mess = function (city) {
+        console.log(city);
 
-    schedule.mess = function () {
-        console.log(schedule.data);
+        $http.get("http://localhost:8080/schedule/todays").success(function (response) {
+            schedule.data =  response;
+            console.log(schedule.data);
+        });
+
+        ngDialog.open({
+            template: 'schedule.html',
+            scope: $scope
+        });
     };
-
 }]);

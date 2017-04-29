@@ -34,3 +34,10 @@ p{  font-family: 'Oxygen', sans-serif;
     letter-spacing: -1px;
 }
 
+.ngdialog-close{
+    visibility: hidden;
+}
+
+.ngdialog-content {
+    width: 1000px !important;
+}

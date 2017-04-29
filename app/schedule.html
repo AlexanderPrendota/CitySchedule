@@ -1,0 +1,20 @@
+<div>
+    <table class="table table-striped">
+        <thead>
+        <tr class="tab">
+            <th class="tab">Train Number</th>
+            <th class="tab">Station Departure</th>
+            <th class="tab">Departure</th>
+            <th class="tab">Station Arrival</th>
+            <th class="tab">Arrival</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="s in schedule.data">
+            <td>{{ s.train }}</td>
+            <td>{{ s.stationDeparture }}</td>
+            <td>{{ s.timeDeparture }}</td>
+            <td>{{ s.stationArrival}}</td>
+            <td>{{ s.timeArrival }}</td>
+        </tr>
+    </table>
+</div>
