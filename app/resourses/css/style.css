@@ -1,0 +1,36 @@
+
+body, html{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #D3D3D3;
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+h1.title,h2 {
+    font-size: 50px;
+    font-family: 'Passion One', cursive;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.city{
+    width: 600px;
+    height: 400px;
+}
+
+p{  font-family: 'Oxygen', sans-serif;
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
