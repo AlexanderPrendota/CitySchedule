@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Basel",
+    "description": "Home to 40 museums, the city of culture for connoisseurs has the highest concentration of museums in the country. Basel also has a beautiful Old Town, modern architecture, and the Rhine – an inviting spot to rest a while.",
+    "image": "resourses/images/Basel.jpg",
+    "country": "Swiss"
+  },
+  {
+    "name": "Moscow",
+    "description": "Moscow is the capital of Russia, is one of the largest cities in the world. It was founded in 1147 by the prince Yuri Dolgoruky. It stands on the banks of the Moskva river. About 8 million people live in the city. Moscow is famous for its historical and architectural monuments that were built by outstanding architects. The Red Square is the central and the most beautiful square in Moscow.",
+    "image": "resourses/images/Moscow.jpg",
+    "country": "Russia"
+  },
+  {
+    "name": "Yaroslavl",
+    "description": "Founded in the 11th century, Yaroslavl is one of the oldest cities in Russia. The historic centre of the city, located at the confluence of the Volga and the Kotorosl rivers, is recognised as UNESCO World Heritage site. Cosmonaut Valentina Tereshkova, the first woman to fly in space, who studied and worked in Yaroslavl from 1945 to 1960, brought the city its world-wide renown.",
+    "image": "resourses/images/Yaroslavl.jpg",
+    "country": "Russia"
+  },
+  {
+    "name": "Saint-Petersburg",
+    "description": "Russia is filled with beautiful buildings and spectacular landscapes, each unique and breathtaking in its own way. But none can quite compare to Saint Petersburg. Founded by Peter the Great and named in his honor, the city has seen many functions throughout the years. ",
+    "image": "resourses/images/Saint-Petersburg.jpg",
+    "country": "Russia"
+  }
+]
+

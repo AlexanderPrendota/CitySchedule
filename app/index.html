@@ -2,15 +2,14 @@
 <html ng-app="MySchedule">
   <head>
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
     <link rel="stylesheet" href="resourses/css/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="libs/angular-1.4.7/angular.min.js"></script>
     <link rel="stylesheet" href="resourses/css/ngDialog.min.css">
     <link rel="stylesheet" href="resourses/css/ngDialog-theme-default.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="libs/angular-1.4.7/angular.min.js"></script>
     <script src="resourses/js/ngDialog.min.js"></script>
     <script type="text/javascript" src="libs/bootstrap-3.3.7/js/bootstrap.js"></script>
-
+    <script type="text/javascript" src="city.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </head>
 
@@ -22,54 +21,8 @@
         </div>
       </div>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Basel <span class="text-muted">Swiss</span></h2>
-        <p class="lead">Home to 40 museums, the city of culture for connoisseurs has the highest concentration of museums in the country. Basel also has a beautiful Old Town, modern architecture, and the Rhine – an inviting spot to rest a while.</p>
-      </div>
-      <div class="col-md-5">
-        <img  id="Basel" ng-click="schedule.mess('Basel')" class="featurette-image img-fluid mx-auto city" src="resourses/images/Basel.jpg" data-src="holder.js/500x500/auto">
-      </div>
+    <div class="list-group-item" ng-repeat="city in schedule.cities">
+      <city-gallery></city-gallery>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 push-md-5">
-        <h2 class="featurette-heading">Moscow <span class="text-muted">Russia.</span></h2>
-        <p class="lead">Moscow is the capital of Russia, is one of the largest cities in the world. It was founded in 1147 by the prince Yuri Dolgoruky. It stands on the banks of the Moskva river. About 8 million people live in the city. Moscow is famous for its historical and architectural monuments that were built by outstanding architects. The Red Square is the central and the most beautiful square in Moscow.</p>
-      </div>
-      <div class="col-md-5 pull-md-7">
-        <img  id="Moscow" ng-click="schedule.mess('Moscow')" class="featurette-image img-fluid mx-auto city" src="resourses/images/Moscow.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Yaroslavl <span class="text-muted">Russia.</span></h2>
-        <p class="lead">Founded in the 11th century, Yaroslavl is one of the oldest cities in Russia. The historic centre of the city, located at the confluence of the Volga and the Kotorosl rivers, is recognised as UNESCO World Heritage site. Cosmonaut Valentina Tereshkova, the first woman to fly in space, who studied and worked in Yaroslavl from 1945 to 1960, brought the city its world-wide renown.</p>
-      </div>
-      <div class="col-md-5">
-        <img  id="Yaroslavl" ng-click="schedule.mess('Yaroslavl')" class="featurette-image img-fluid mx-auto city" src="resourses/images/Yaroslavl.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
-    </div>
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Saint-Peterburg <span class="text-muted">Russia.</span></h2>
-        <p class="lead">Russia is filled with beautiful buildings and spectacular landscapes, each unique and breathtaking in its own way. But none can quite compare to Saint Petersburg. Founded by Peter the Great and named in his honor, the city has seen many functions throughout the years. </p>
-      </div>
-      <div class="col-md-5">
-        <img  id="Saint-Petersburg" ng-click="schedule.mess('Saint-Petersburg')"  class="featurette-image img-fluid mx-auto city" src="resourses/images/Spb.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
-    </div>
-    <hr class="featurette-divider">
-  <div class="dialog"></div>
   </body>
 </html>

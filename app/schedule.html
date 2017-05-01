@@ -10,11 +10,11 @@
         </tr>
         </thead>
         <tr ng-repeat="s in schedule.data">
-            <td>{{ s.train }}</td>
-            <td>{{ s.stationDeparture }}</td>
-            <td>{{ s.timeDeparture }}</td>
-            <td>{{ s.stationArrival}}</td>
-            <td>{{ s.timeArrival }}</td>
+            <td>{{ s.train.id }}</td>
+            <td>{{ s.stationDeparture.stationName }}</td>
+            <td>{{ s.timeDeparture | date: "short"}}</td>
+            <td>{{ s.stationArrival.stationName}}</td>
+            <td>{{ s.timeArrival | date : "short"}}</td>
         </tr>
     </table>
 </div>
