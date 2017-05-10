@@ -1,13 +1,13 @@
 
 <hr class="featurette-divider">
 
-<div class="row featurette">
+<div class="row featurette" ng-click="schedule.mess(city.name)">
     <div class="col-md-7">
         <h2 class="featurette-heading">{{city.name}} <span class="text-muted">{{city.country}}</span></h2>
         <p class="lead">{{city.description}}</p>
     </div>
     <div class="col-md-5">
-        <img id="Basel" ng-click="schedule.mess(city.name)" class="featurette-image img-fluid mx-auto city" ng-src="{{city.image}}">
+        <img id="Basel" class="featurette-image img-fluid mx-auto city" ng-src="{{city.image}}">
     </div>
 </div>
 </div>
