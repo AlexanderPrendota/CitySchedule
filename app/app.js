@@ -12,7 +12,7 @@ app.controller("ScheduleController", ['$http', 'ngDialog', '$scope',function ($h
     schedule.mess = function (city) {
         console.log(city);
 
-        $http.get("http://localhost:8080/schedule/station/" + city).success(function (response) {
+        $http.get("http://37.139.26.89:8080/schedule/station/" + city).success(function (response) {
             schedule.data =  response;
             console.log(schedule.data);
         });
